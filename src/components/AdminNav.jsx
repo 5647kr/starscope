@@ -2,7 +2,14 @@ import { useEffect } from "react";
 import useMenuStore from "../store/menuStore";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
-import { Home, Package, Store, MessagesSquare, X } from "lucide-react";
+import {
+  Home,
+  Package,
+  Store,
+  MessagesSquare,
+  X,
+  SquareArrowOutUpRight,
+} from "lucide-react";
 import Button from "./Button";
 import { LogOut } from "../api/Log";
 
@@ -67,6 +74,10 @@ export default function AdminNav({ handleCloseNav }) {
         </MainMenu>
         <LogWrap>
           <p>{info.user.email}</p>
+          <Link to="/">
+            홈페이지
+            <SquareArrowOutUpRight size={12} />
+          </Link>
           <Button onClick={handleLogOut}>LogOut</Button>
         </LogWrap>
       </div>
@@ -161,5 +172,10 @@ const LogWrap = styled.div`
     position: absolute;
     right: 1rem;
     bottom: 1rem;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
   }
 `;

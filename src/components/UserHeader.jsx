@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export default function UserHeader() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [activeMenu, setActiveMenu] = useState("");
   const [currentImg, setCurrentImg] = useState(0);
   const heroImgs = [
     {
-      base:  import.meta.env.BASE_URL + "/heroImg/heroImg1-768.webp",
+      base: import.meta.env.BASE_URL + "/heroImg/heroImg1-768.webp",
       srcset: `
       ${import.meta.env.BASE_URL}heroImg/heroImg1-480.webp 480w,
       ${import.meta.env.BASE_URL}heroImg/heroImg1-768.webp 768w,
@@ -38,6 +39,7 @@ export default function UserHeader() {
     `,
     },
   ];
+  const [adminCount, setAdminCount] = useState(0);
 
   useEffect(() => {
     const path = location.pathname;
@@ -62,8 +64,19 @@ export default function UserHeader() {
     return () => clearInterval(timer);
   }, []);
 
+  const accessAdmin = () => {
+    setAdminCount((prev) => {
+      const newCount = prev + 1;
+      if (newCount === 7) {
+        navigate("/auth/login");
+      }
+      return newCount;
+    });
+  };
+
   return (
     <HeaderWrap>
+      <AdminAccess onClick={accessAdmin}>{adminCount}</AdminAccess>
       <HeroWrap>
         {heroImgs.map((img, index) => (
           <HeroImg
@@ -106,6 +119,15 @@ export default function UserHeader() {
 
 const HeaderWrap = styled.header`
   position: relative;
+`;
+
+const AdminAccess = styled.div`
+  width: 50px;
+  height: 50px;
+  box-shadow: inset 0 0 10px red;
+  position: absolute;
+  z-index: 100;
+  color: white;
 `;
 
 const HeroWrap = styled.div`

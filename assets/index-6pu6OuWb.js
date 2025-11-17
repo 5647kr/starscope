@@ -1250,24 +1250,24 @@ Option 2: Install and provide the "ws" package:
     height: 1rem;
     background-color: var(--boxBg-color);
   }
-`;function l2(){const r=bn(),[a,s]=E.useState(""),[l,o]=E.useState(0),c=[{base:"/heroImg/heroImg1-768.webp",srcset:`
-      /heroImg/heroImg1-480.webp 480w,
-      /heroImg/heroImg1-768.webp 768w,
-      /heroImg/heroImg1-1024.webp 1024w,
-      /heroImg/heroImg1-1440.webp 1440w,
-      /heroImg/heroImg1-1920.webp 1920w
-    `},{base:"/heroImg/heroImg2-768.webp",srcset:`
-      /heroImg/heroImg2-480.webp 480w,
-      /heroImg/heroImg2-768.webp 768w,
-      /heroImg/heroImg2-1024.webp 1024w,
-      /heroImg/heroImg2-1440.webp 1440w,
-      /heroImg/heroImg2-1920.webp 1920w
-    `},{base:"/heroImg/heroImg3-768.webp",srcset:`
-      /heroImg/heroImg3-480.webp 480w,
-      /heroImg/heroImg3-768.webp 768w,
-      /heroImg/heroImg3-1024.webp 1024w,
-      /heroImg/heroImg3-1440.webp 1440w,
-      /heroImg/heroImg3-1920.webp 1920w
+`;function l2(){const r=bn(),[a,s]=E.useState(""),[l,o]=E.useState(0),c=[{base:"/starscope//heroImg/heroImg1-768.webp",srcset:`
+      /starscope/heroImg/heroImg1-480.webp 480w,
+      /starscope/heroImg/heroImg1-768.webp 768w,
+      /starscope/heroImg/heroImg1-1024.webp 1024w,
+      /starscope/heroImg/heroImg1-1440.webp 1440w,
+      /starscope/heroImg/heroImg1-1920.webp 1920w
+    `},{base:"/starscope//heroImg/heroImg2-768.webp",srcset:`
+      /starscope/heroImg/heroImg2-480.webp 480w,
+      /starscope/heroImg/heroImg2-768.webp 768w,
+      /starscope/heroImg/heroImg2-1024.webp 1024w,
+      /starscope/heroImg/heroImg2-1440.webp 1440w,
+      /starscope/heroImg/heroImg2-1920.webp 1920w
+    `},{base:"/starscope//heroImg/heroImg3-768.webp",srcset:`
+      /starscope/heroImg/heroImg3-480.webp 480w,
+      /starscope/heroImg/heroImg3-768.webp 768w,
+      /starscope/heroImg/heroImg3-1024.webp 1024w,
+      /starscope/heroImg/heroImg3-1440.webp 1440w,
+      /starscope/heroImg/heroImg3-1920.webp 1920w
     `}];return E.useEffect(()=>{const h=r.pathname;h.includes("/brand")?s("Brand"):h.includes("/product")?s("Product"):h.includes("/store")?s("Store"):h.includes("/commu")?s("Commu"):s("")},[r.pathname]),E.useEffect(()=>{const h=setInterval(()=>{o(m=>(m+1)%c.length)},5e3);return()=>clearInterval(h)},[]),f.jsxs(o2,{children:[f.jsx(u2,{children:c.map((h,m)=>f.jsx(c2,{src:h.base,srcSet:h.srcset,sizes:"100vw",alt:`hero_${m}`,$isActive:l===m},m))}),f.jsxs(d2,{children:[f.jsx(f2,{children:f.jsx("h1",{children:f.jsx(Ie,{to:"/",children:"StarScope"})})}),f.jsx(h2,{children:f.jsxs("ul",{children:[f.jsx(Yl,{$isActive:a==="Brand",children:f.jsx(Ie,{to:"/brand",children:"Brand"})}),f.jsx(Yl,{$isActive:a==="Product",children:f.jsx(Ie,{to:"/product",children:"Product"})}),f.jsx(Yl,{$isActive:a==="Store",children:f.jsx(Ie,{to:"/store",children:"Store"})}),f.jsx(Yl,{$isActive:a==="Commu",children:f.jsx(Ie,{to:"/commu",children:"Commu"})})]})})]})]})}const o2=H.header`
   position: relative;
 `,u2=H.div`
@@ -2163,17 +2163,19 @@ Option 2: Install and provide the "ws" package:
       font-size: var(--font-2xlz);
     }
   }
-`;function fE(){return E.useEffect(()=>{Hd.init()},[]),f.jsxs(f.Fragment,{children:[f.jsx("title",{children:"StarScope 브랜드"}),f.jsx("h1",{className:"a11y-hidden",children:"StarScope 브랜드 소개"}),f.jsx(hE,{"data-aos":"fade-down","data-aos-delay":"200","data-aos-duration":"800",children:f.jsx("h2",{children:"별을 관찰하는 일은 기술이 아닌 경험의 확장"})}),f.jsxs(mE,{children:[f.jsx("img",{src:"/heroImg/brandIntro-480.webp",srcSet:`
-          /heroImg/brandIntro-480.webp 480w,
-          /heroImg/brandIntro-768.webp 768w,
-          /heroImg/brandIntro-1024.webp 1024w,
-          /heroImg/brandIntro-1440.webp 1440w,
-          /heroImg/brandIntro-1920.webp 1920w`,sizes:"100vw",alt:"렌즈가 보이는 사진",loading:"lazy"}),f.jsxs("div",{children:[f.jsx("h3",{"data-aos":"fade-down","data-aos-delay":"200","data-aos-duration":"400",children:"별을 더 잘 보는 도구"}),f.jsx("strong",{"data-aos":"fade-down","data-aos-delay":"200","data-aos-duration":"400",children:"보다"}),f.jsx("h3",{"data-aos":"fade-down","data-aos-delay":"200","data-aos-duration":"400",children:"세상을 더 넓게 바라보는 시선"})]})]}),f.jsxs(Jg,{children:[f.jsx("h2",{"data-aos":"fade-right","data-aos-delay":"200","data-aos-duration":"800",children:"동아리에서 브랜드가 되기 까지"}),f.jsxs("p",{"data-aos":"fade-right","data-aos-delay":"300","data-aos-duration":"800",children:["Starscope의 시작은 한 작은 천문 동아리에서 비롯되었습니다. “누구나 별을 쉽게 관찰할 수 있다면 얼마나 멋질까?” 이 단순한 물음에서 출발해,",f.jsx("br",{}),"광학 기술과 디자인을 결합한 사용자 친화적인 망원경을 만들어왔습니다."]}),f.jsx("p",{"data-aos":"fade-right","data-aos-delay":"400","data-aos-duration":"800",children:"지금도 StarScope는 전문가용 천체망원경부터 입문자, 휴대용 관찰기기까지 모든 이가 우주와 연결될 수 있는 관문을 만들어가고 있습니다."})]}),f.jsxs(pE,{children:[f.jsx("img",{src:"/heroImg/brandTech-480.webp",srcSet:`
-          /heroImg/brandTech-480.webp 480w,
-          /heroImg/brandTech-768.webp 768w,
-          /heroImg/brandTech-1024.webp 1024w,
-          /heroImg/brandTech-1440.webp 1440w,
-          /heroImg/brandTech-1920.webp 1920w`,sizes:"100vw",alt:"렌즈가 보이는 사진",loading:"lazy"}),f.jsxs("div",{children:[f.jsx("h3",{"data-aos":"fade-up","data-aos-delay":"300","data-aos-duration":"800",children:"기술과 철학의 결합"}),f.jsx("h3",{"data-aos":"fade-up","data-aos-delay":"200","data-aos-duration":"800",children:"별을 보는 일은, 사람의 시야를 넓히는 일"})]})]}),f.jsxs(Jg,{children:[f.jsx("h2",{"data-aos":"fade-right","data-aos-delay":"200","data-aos-duration":"800",children:"당신의 망원경이 곧, 당신의 우주가 됩니다."}),f.jsx("p",{"data-aos":"fade-right","data-aos-delay":"300","data-aos-duration":"800",children:"정밀 광학 기술에 인간 중심의 사용성을 더했습니다. Starscope의 모든 제품은 기술과 감성이 공존하는 도구입니다."}),f.jsxs("p",{"data-aos":"fade-right","data-aos-delay":"400","data-aos-duration":"800",children:["StarScope는 단순히 별을 보는 도구를 넘어 하늘을 이해하고, ",f.jsx("br",{}),"꿈꾸는 문화를 만드는 브랜드로 성장하고 있습니다."]})]})]})}const hE=H(pt)`
+`;function fE(){return E.useEffect(()=>{Hd.init()},[]),f.jsxs(f.Fragment,{children:[f.jsx("title",{children:"StarScope 브랜드"}),f.jsx("h1",{className:"a11y-hidden",children:"StarScope 브랜드 소개"}),f.jsx(hE,{"data-aos":"fade-down","data-aos-delay":"200","data-aos-duration":"800",children:f.jsx("h2",{children:"별을 관찰하는 일은 기술이 아닌 경험의 확장"})}),f.jsxs(mE,{children:[f.jsx("img",{src:"/starscope/heroImg/brandIntro-480.webp",srcSet:`
+    /starscope/heroImg/brandIntro-480.webp 480w,
+    /starscope/heroImg/brandIntro-768.webp 768w,
+    /starscope/heroImg/brandIntro-1024.webp 1024w,
+    /starscope/heroImg/brandIntro-1440.webp 1440w,
+    /starscope/heroImg/brandIntro-1920.webp 1920w
+  `,sizes:"100vw",alt:"렌즈가 보이는 사진",loading:"lazy"}),f.jsxs("div",{children:[f.jsx("h3",{"data-aos":"fade-down","data-aos-delay":"200","data-aos-duration":"400",children:"별을 더 잘 보는 도구"}),f.jsx("strong",{"data-aos":"fade-down","data-aos-delay":"200","data-aos-duration":"400",children:"보다"}),f.jsx("h3",{"data-aos":"fade-down","data-aos-delay":"200","data-aos-duration":"400",children:"세상을 더 넓게 바라보는 시선"})]})]}),f.jsxs(Jg,{children:[f.jsx("h2",{"data-aos":"fade-right","data-aos-delay":"200","data-aos-duration":"800",children:"동아리에서 브랜드가 되기 까지"}),f.jsxs("p",{"data-aos":"fade-right","data-aos-delay":"300","data-aos-duration":"800",children:["Starscope의 시작은 한 작은 천문 동아리에서 비롯되었습니다. “누구나 별을 쉽게 관찰할 수 있다면 얼마나 멋질까?” 이 단순한 물음에서 출발해,",f.jsx("br",{}),"광학 기술과 디자인을 결합한 사용자 친화적인 망원경을 만들어왔습니다."]}),f.jsx("p",{"data-aos":"fade-right","data-aos-delay":"400","data-aos-duration":"800",children:"지금도 StarScope는 전문가용 천체망원경부터 입문자, 휴대용 관찰기기까지 모든 이가 우주와 연결될 수 있는 관문을 만들어가고 있습니다."})]}),f.jsxs(pE,{children:[f.jsx("img",{src:"/starscope/heroImg/brandTech-480.webp",srcSet:`
+    /starscope/heroImg/brandTech-480.webp 480w,
+    /starscope/heroImg/brandTech-768.webp 768w,
+    /starscope/heroImg/brandTech-1024.webp 1024w,
+    /starscope/heroImg/brandTech-1440.webp 1440w,
+    /starscope/heroImg/brandTech-1920.webp 1920w
+  `,sizes:"100vw",alt:"렌즈가 보이는 사진",loading:"lazy"}),f.jsxs("div",{children:[f.jsx("h3",{"data-aos":"fade-up","data-aos-delay":"300","data-aos-duration":"800",children:"기술과 철학의 결합"}),f.jsx("h3",{"data-aos":"fade-up","data-aos-delay":"200","data-aos-duration":"800",children:"별을 보는 일은, 사람의 시야를 넓히는 일"})]})]}),f.jsxs(Jg,{children:[f.jsx("h2",{"data-aos":"fade-right","data-aos-delay":"200","data-aos-duration":"800",children:"당신의 망원경이 곧, 당신의 우주가 됩니다."}),f.jsx("p",{"data-aos":"fade-right","data-aos-delay":"300","data-aos-duration":"800",children:"정밀 광학 기술에 인간 중심의 사용성을 더했습니다. Starscope의 모든 제품은 기술과 감성이 공존하는 도구입니다."}),f.jsxs("p",{"data-aos":"fade-right","data-aos-delay":"400","data-aos-duration":"800",children:["StarScope는 단순히 별을 보는 도구를 넘어 하늘을 이해하고, ",f.jsx("br",{}),"꿈꾸는 문화를 만드는 브랜드로 성장하고 있습니다."]})]})]})}const hE=H(pt)`
   & h2 {
     font-size: var(--font-mz);
     font-weight: var(--font-bw);

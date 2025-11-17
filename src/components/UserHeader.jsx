@@ -76,7 +76,7 @@ export default function UserHeader() {
 
   return (
     <HeaderWrap>
-      <AdminAccess onClick={accessAdmin}>{adminCount}</AdminAccess>
+      <AdminAccess onClick={accessAdmin} />
       <HeroWrap>
         {heroImgs.map((img, index) => (
           <HeroImg
@@ -124,10 +124,8 @@ const HeaderWrap = styled.header`
 const AdminAccess = styled.div`
   width: 50px;
   height: 50px;
-  box-shadow: inset 0 0 10px red;
   position: absolute;
   z-index: 100;
-  color: white;
 `;
 
 const HeroWrap = styled.div`

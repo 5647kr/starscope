@@ -8,33 +8,33 @@ export default function UserHeader() {
   const [currentImg, setCurrentImg] = useState(0);
   const heroImgs = [
     {
-      base: "/heroImg/heroImg1-768.webp",
+      base:  import.meta.env.BASE_URL + "/heroImg/heroImg1-768.webp",
       srcset: `
-      /heroImg/heroImg1-480.webp 480w,
-      /heroImg/heroImg1-768.webp 768w,
-      /heroImg/heroImg1-1024.webp 1024w,
-      /heroImg/heroImg1-1440.webp 1440w,
-      /heroImg/heroImg1-1920.webp 1920w
+      ${import.meta.env.BASE_URL}heroImg/heroImg1-480.webp 480w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg1-768.webp 768w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg1-1024.webp 1024w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg1-1440.webp 1440w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg1-1920.webp 1920w
     `,
     },
     {
-      base: "/heroImg/heroImg2-768.webp",
+      base: import.meta.env.BASE_URL + "/heroImg/heroImg2-768.webp",
       srcset: `
-      /heroImg/heroImg2-480.webp 480w,
-      /heroImg/heroImg2-768.webp 768w,
-      /heroImg/heroImg2-1024.webp 1024w,
-      /heroImg/heroImg2-1440.webp 1440w,
-      /heroImg/heroImg2-1920.webp 1920w
+      ${import.meta.env.BASE_URL}heroImg/heroImg2-480.webp 480w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg2-768.webp 768w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg2-1024.webp 1024w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg2-1440.webp 1440w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg2-1920.webp 1920w
     `,
     },
     {
-      base: "/heroImg/heroImg3-768.webp",
+      base: import.meta.env.BASE_URL + "/heroImg/heroImg3-768.webp",
       srcset: `
-      /heroImg/heroImg3-480.webp 480w,
-      /heroImg/heroImg3-768.webp 768w,
-      /heroImg/heroImg3-1024.webp 1024w,
-      /heroImg/heroImg3-1440.webp 1440w,
-      /heroImg/heroImg3-1920.webp 1920w
+      ${import.meta.env.BASE_URL}heroImg/heroImg3-480.webp 480w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg3-768.webp 768w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg3-1024.webp 1024w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg3-1440.webp 1440w,
+      ${import.meta.env.BASE_URL}heroImg/heroImg3-1920.webp 1920w
     `,
     },
   ];

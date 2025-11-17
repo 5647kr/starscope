@@ -23,13 +23,14 @@ export default function UserBrand() {
 
       <BrandIntro>
         <img
-          src="/heroImg/brandIntro-480.webp"
-          srcSet="
-          /heroImg/brandIntro-480.webp 480w,
-          /heroImg/brandIntro-768.webp 768w,
-          /heroImg/brandIntro-1024.webp 1024w,
-          /heroImg/brandIntro-1440.webp 1440w,
-          /heroImg/brandIntro-1920.webp 1920w"
+          src={import.meta.env.BASE_URL + "heroImg/brandIntro-480.webp"}
+          srcSet={`
+    ${import.meta.env.BASE_URL}heroImg/brandIntro-480.webp 480w,
+    ${import.meta.env.BASE_URL}heroImg/brandIntro-768.webp 768w,
+    ${import.meta.env.BASE_URL}heroImg/brandIntro-1024.webp 1024w,
+    ${import.meta.env.BASE_URL}heroImg/brandIntro-1440.webp 1440w,
+    ${import.meta.env.BASE_URL}heroImg/brandIntro-1920.webp 1920w
+  `}
           sizes="100vw"
           alt="렌즈가 보이는 사진"
           loading="lazy"
@@ -70,13 +71,14 @@ export default function UserBrand() {
 
       <BrandTech>
         <img
-          src="/heroImg/brandTech-480.webp"
-          srcSet="
-          /heroImg/brandTech-480.webp 480w,
-          /heroImg/brandTech-768.webp 768w,
-          /heroImg/brandTech-1024.webp 1024w,
-          /heroImg/brandTech-1440.webp 1440w,
-          /heroImg/brandTech-1920.webp 1920w"
+          src={import.meta.env.BASE_URL + "heroImg/brandTech-480.webp"}
+          srcSet={`
+    ${import.meta.env.BASE_URL}heroImg/brandTech-480.webp 480w,
+    ${import.meta.env.BASE_URL}heroImg/brandTech-768.webp 768w,
+    ${import.meta.env.BASE_URL}heroImg/brandTech-1024.webp 1024w,
+    ${import.meta.env.BASE_URL}heroImg/brandTech-1440.webp 1440w,
+    ${import.meta.env.BASE_URL}heroImg/brandTech-1920.webp 1920w
+  `}
           sizes="100vw"
           alt="렌즈가 보이는 사진"
           loading="lazy"

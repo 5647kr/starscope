@@ -24,11 +24,13 @@ export default function QnaPost() {
     await updatePost(id, { recall: newValue }, "commu_qna");
   };
 
-  const filteredQna = commu_qna.filter((item) => {
-    if (sortTable === "true") return item.recall === true;
-    if (sortTable === "false") return item.recall === false;
-    return true;
-  });
+  const filteredQna = commu_qna
+    .filter((item) => {
+      if (sortTable === "true") return item.recall === true;
+      if (sortTable === "false") return item.recall === false;
+      return true;
+    })
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
   const hasAnswered = commu_qna.some((item) => item.recall === true);
   const hasUnanswered = commu_qna.some((item) => item.recall === false);

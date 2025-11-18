@@ -9,7 +9,6 @@
         if (sessionStorage.redirect) {
           var redirect = sessionStorage.redirect;
           delete sessionStorage.redirect;
-          // react-router로 원래 경로 복원
           window.history.replaceState(null, null, redirect);
         }
       })();

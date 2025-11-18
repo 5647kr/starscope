@@ -167,7 +167,6 @@ export default function PostCreate() {
 
         <ImgWrap>
           <label htmlFor="imgurl">제품 사진</label>
-          {/* 이미지 선택 후 화면 (미리보기) */}
           {previewImg ? (
             <PreviewImgWrap $previewImg={previewImg}>
               <img src={previewImg} alt="Preview" />

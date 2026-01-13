@@ -1,0 +1,17 @@
+name: Keep Supabase Alive
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: 
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send GET request to Supabase
+        run: |
+          # URL도 변수 처리하면 더 안전하고 깔끔합니다.
+          curl -X GET "${{ secrets.SUPABASE_URL }}/rest/v1/product_product?select=*" \
+            -H "apikey: ${{ secrets.SUPABASE_API_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_API_KEY }}"
